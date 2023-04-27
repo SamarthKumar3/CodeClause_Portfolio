@@ -1,0 +1,181 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav-link {
+    color: #E7F6F2;
+    margin: 20px 50px 20px 20px !important;
+    font-size: 14px;
+}
+
+.nav-link:is( :hover, :focus) {
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.backimg {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 900;
+    line-height: 1.5;
+    font-size: 4rem;
+}
+
+.r1 {
+    background-color: #E7F6F2;
+    padding: 5rem 0 5rem 0;
+}
+
+.introtxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 3rem 3rem;
+    flex-direction: column;
+    text-align: center;
+    grid-row-gap: 1rem;
+}
+
+.abtme h2 {
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #395B64;
+}
+
+.r2 {
+    padding: 5rem 0 5rem 0;
+}
+
+.circlebg {
+    height: 35rem;
+    width: 35rem;
+    background-color: #A5C9CA;
+    border-radius: 50%;
+    outline: 5px solid transparent;
+    margin: auto;
+    transition: .5s ease-in-out;
+}
+
+.circlebg:hover {
+    outline: 5px solid #395B64;
+    outline-offset: 5px;
+}
+
+.abtme {
+    position: relative;
+    text-align: center;
+
+}
+
+.abtmetxt {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 4%;
+}
+
+.abtmetxt h4 {
+    line-height: 1.5;
+}
+
+.carousel-img {
+    width: 100%;
+    transition: .5s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.projectdesc {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    padding: 1% 7% 0 7%;
+    top: 20%;
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: #00000078
+}
+
+.projectxt {
+    color: black;
+    font-size: 80%;
+    font-weight: 600;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.carousel-caption {
+    opacity: 0;
+    position: relative;
+    right: 0;
+    left: 0;
+    padding: 1%;
+}
+
+
+@media (max-width: 768px) {
+    .projectdesc {
+        top: 0;
+        padding-top: 2rem;
+    }
+    .projectxt {
+        font-size: 50%;
+    }
+    
+}
+
+.procontainer:hover .carousel-img {
+    opacity: 0.1;
+}
+
+.procontainer:hover .projectdesc,
+.procontainer:hover .carousel-caption {
+    opacity: 1;
+}
+
+.prohead {
+    text-align: center;
+    color: cadetblue;
+    margin-bottom: 2.5%;
+}
+
+footer {
+    padding: 1% 15%;
+    text-align: center;
+    background-color: #E7F6F2;
+}
+
+.footer-icon {
+    padding: 10px;
+    color: #000000;
+
+}
+
+footer h2{
+    font-weight: bold;
+    color: cadetblue;
+    margin: 1rem;
+}
+
+#contacts{
+    margin-top: 5rem;
+}
